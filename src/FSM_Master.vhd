@@ -59,8 +59,45 @@ entity FSM_Master is
 end FSM_Master;
 
 
+
 architecture Behavioral of FSM_Master is
 
-begin    
+    -- Definición de los Estados 
+    type STATES is (M_IDLE, M_UPDATE_COLOR, M_TRIGGER_TIMER, M_WAIT_SLAVE);
+    signal current_state, next_state : STATES;
 
+    -- Señales internas para guardar el valor del color
+    signal r_reg, g_reg, b_reg : unsigned(7 downto 0);
+
+begin
+
+     ----------------------------------------------------------------------------------
+    -- PROCESS 1: BLOQUE PARA ACTUALIZAR EL ESTADO ACTUAL
+   state_register: process (RESET, CLK)
+    begin
+        -- Supongo Reset activo a nivel bajo '0' 
+        if (RESET = '0') then 
+            current_state <= M_IDLE;
+    
+        elsif rising_edge(CLK) then
+            current_state <= next_state;
+        end if;
+        
+    end process;
+
+
+    ----------------------------------------------------------------------------------
+    -- PROCESS 2: BLOQUE PARA CALCULAR EL ESTADO SIGUIENTE
+    nextstate_decod: process (PULSE_UP, PULSE_DOWN, current_state)
+    begin
+        
+    end process;
+    
+     ----------------------------------------------------------------------------------
+     -- PROCESS 3: BLOQUE PARA GENERAR LA SALIDA
+     output_decod: process (current_state)
+     begin
+       
+     end process;
+    
 end Behavioral;
