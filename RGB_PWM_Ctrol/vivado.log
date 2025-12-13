@@ -147,3 +147,29 @@ WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-f
 WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\src\FSM_Master.vhd:]
 WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\src\FSM_Master.vhd:]
 WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\src\FSM_Master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\src\RGB_Controller.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\src\FSM_Slave.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\src\FSM_Master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\src\RGB_Controller.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\src\RGB_Controller.vhd:]
+ERROR: [Common 17-180] Spawn failed: La operación se completó correctamente.
+
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\src\RGB_Controller.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\src\FSM_Slave.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\src\FSM_Master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\src\FSM_Master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\src\FSM_Master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\src\RGB_Controller.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\src\FSM_Slave.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\src\FSM_Master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\src\RGB_Controller.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\src\RGB_Controller.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\src\RGB_Controller.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\src\FSM_Slave.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\src\FSM_Master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\src\FSM_Slave.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\src\FSM_Slave.vhd:]
+ERROR: [Common 17-180] Spawn failed: La operación se completó correctamente.
+
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 13 23:20:48 2025...

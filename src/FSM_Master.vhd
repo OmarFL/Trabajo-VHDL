@@ -74,13 +74,19 @@ begin
      ----------------------------------------------------------------------------------
     -- PROCESS 1: BLOQUE PARA ACTUALIZAR EL ESTADO ACTUAL
    state_register: process (RESET, CLK)
-    begin
-        -- Supongo Reset activo a nivel bajo '0' 
-        if (RESET = '0') then 
+   begin
+        
+        if (RESET = '1') then 
             current_state <= M_IDLE;
+            
+            -- Reset pone a negro la combinación RGB por defecto (RGB = 000)
+            r_reg <= (others => '0');
+            g_reg <= (others => '0');
+            b_reg <= (others => '0');
     
         elsif rising_edge(CLK) then
             current_state <= next_state;
+            
         end if;
         
     end process;
@@ -88,8 +94,30 @@ begin
 
     ----------------------------------------------------------------------------------
     -- PROCESS 2: BLOQUE PARA CALCULAR EL ESTADO SIGUIENTE
-    nextstate_decod: process (PULSE_UP, PULSE_DOWN, current_state)
+    nextstate_decod: process (PULSE_UP, PULSE_DOWN, current_state, TIMER_DONE)
     begin
+    
+        next_state <= current_state; -- Valor por defecto para evitar latches
+        TIMER_START <= '0';
+        DELAY_SELECT <= '0';
+        
+        case current_state is
+        
+            when M_IDLE =>
+         
+
+            when M_UPDATE_COLOR =>
+
+
+            when M_TRIGGER_TIMER =>
+
+
+            when M_WAIT_SLAVE =>
+
+
+            when others =>
+                
+        end case;
         
     end process;
     
@@ -98,6 +126,13 @@ begin
      output_decod: process (current_state)
      begin
        
+       -- Esto de momento se queda vacío
+       
      end process;
+     
+     -- Conexión de los registros internos a las salidas
+     RED_VAL   <= std_logic_vector(r_reg);
+     GREEN_VAL <= std_logic_vector(g_reg);
+     BLUE_VAL  <= std_logic_vector(b_reg);
     
 end Behavioral;
