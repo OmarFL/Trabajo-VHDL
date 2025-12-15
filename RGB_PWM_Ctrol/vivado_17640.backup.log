@@ -3,10 +3,10 @@
 # SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
 # IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
 # SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
-# Start of session at: Mon Dec 15 19:58:27 2025
-# Process ID         : 14092
+# Start of session at: Sat Dec 13 22:24:24 2025
+# Process ID         : 17640
 # Current directory  : C:/Users/omarf/Documents/GitHub/Trabajo-VHDL/RGB_PWM_Ctrol
-# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent10396 C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\RGB_PWM_Ctrol\RGB_PWM_Ctrol.xpr
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent16264 C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\RGB_PWM_Ctrol\RGB_PWM_Ctrol.xpr
 # Log file           : C:/Users/omarf/Documents/GitHub/Trabajo-VHDL/RGB_PWM_Ctrol/vivado.log
 # Journal file       : C:/Users/omarf/Documents/GitHub/Trabajo-VHDL/RGB_PWM_Ctrol\vivado.jou
 # Running On         : OmarPC
@@ -19,7 +19,7 @@
 # Host memory        : 16831 MB
 # Swap memory        : 1073 MB
 # Total Virtual      : 17905 MB
-# Available Virtual  : 7375 MB
+# Available Virtual  : 7627 MB
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/omarf/Documents/GitHub/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.xpr
@@ -131,5 +131,45 @@ INFO: [Common 17-14] Message 'Board 49-26' appears 100 times and further instanc
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/2025.1/Vivado/data/ip'.
-open_project: Time (s): cpu = 00:00:40 ; elapsed = 00:00:28 . Memory (MB): peak = 1601.895 ; gain = 249.672
+open_project: Time (s): cpu = 00:00:40 ; elapsed = 00:00:29 . Memory (MB): peak = 1594.730 ; gain = 247.332
 update_compile_order -fileset sources_1
+add_files -norecurse {C:/Users/omarf/Documents/GitHub/Trabajo-VHDL/src/FSM_Master.vhd C:/Users/omarf/Documents/GitHub/Trabajo-VHDL/src/FSM_Slave.vhd}
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\src\RGB_Controller.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\src\FSM_Slave.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\src\FSM_Master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\src\RGB_Controller.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\src\RGB_Controller.vhd:]
+ERROR: [Common 17-180] Spawn failed: La operación se completó correctamente.
+
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\src\RGB_Controller.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\src\FSM_Slave.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\src\FSM_Master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\src\FSM_Master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\src\FSM_Master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\src\RGB_Controller.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\src\FSM_Slave.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\src\FSM_Master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\src\RGB_Controller.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\src\RGB_Controller.vhd:]
+ERROR: [Common 17-180] Spawn failed: La operación se completó correctamente.
+
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\src\RGB_Controller.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\src\FSM_Slave.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\src\FSM_Master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\src\FSM_Master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\src\FSM_Master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\src\RGB_Controller.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\src\FSM_Slave.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\src\FSM_Master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\src\RGB_Controller.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\src\RGB_Controller.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\src\RGB_Controller.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\src\FSM_Slave.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\src\FSM_Master.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\src\FSM_Slave.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\src\FSM_Slave.vhd:]
+ERROR: [Common 17-180] Spawn failed: La operación se completó correctamente.
+
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 13 23:20:48 2025...

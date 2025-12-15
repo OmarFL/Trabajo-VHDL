@@ -40,11 +40,14 @@ entity FSM_Master is
         RESET         : in  STD_LOGIC;
         
         -- Entradas de control (desde INPUT_CONDITIONER)
+        BTN_UP_CLEAN  : in  STD_LOGIC; 
+        BTN_DOWN_CLEAN: in  STD_LOGIC;
+        R_CLEAN       : in  STD_LOGIC;
+        G_CLEAN       : in  STD_LOGIC;
+        B_CLEAN       : in  STD_LOGIC;
+        
         PULSE_UP      : in  STD_LOGIC;
         PULSE_DOWN    : in  STD_LOGIC;
-        SW_R          : in  STD_LOGIC;
-        SW_G          : in  STD_LOGIC;
-        SW_B          : in  STD_LOGIC;
         
         -- Comunicación con el FSM_Slave
         TIMER_DONE    : in  STD_LOGIC;  -- Señal "DONE" del esclavo
@@ -84,11 +87,76 @@ begin
             g_reg <= (others => '0');
             b_reg <= (others => '0');
     
+    
         elsif rising_edge(CLK) then
             current_state <= next_state;
-            
+              
+            -- El registro de color se actualiza sólo cuando estamos en el estado UPDATE
+            if (current_state = M_UPDATE_COLOR) then
+            ------------------------------------------------------------------------------------------------
+                -- Color ROJO
+                if (R_CLEAN = '1') then
+                
+                    if (BTN_UP_CLEAN = '1') then
+
+                       -- Si no ha llegado a 255, se suma 1
+                       if r_reg <= "11111111" then 
+                            r_reg <= r_reg + 1;   
+                       end if;
+                       
+                    elsif (BTN_DOWN_CLEAN = '1') then   
+                       
+                       -- Si no ha llegado a 0, se resta 1
+                       if r_reg > "00000000" then
+                           r_reg <= r_reg - 1;
+                       end if;
+                       
+                    end if;       
+                end if;
+                
+            ------------------------------------------------------------------------------------------------
+                -- Color VERDE
+                if (G_CLEAN = '1') then
+                
+                    if (BTN_UP_CLEAN = '1') then
+
+                       -- Si no ha llegado a 255, se suma 1
+                       if g_reg <= "11111111" then 
+                            g_reg <= g_reg + 1;   
+                       end if;
+                       
+                    elsif (BTN_DOWN_CLEAN = '1') then   
+                       
+                       -- Si no ha llegado a 0, se resta 1
+                       if g_reg > "00000000" then
+                           g_reg <= g_reg - 1;
+                       end if;
+                       
+                    end if;       
+                end if;
+           ------------------------------------------------------------------------------------------------
+                -- Color AZUL
+                if (B_CLEAN = '1') then
+                
+                    if (BTN_UP_CLEAN = '1') then
+
+                       -- Si no ha llegado a 255, se suma 1
+                       if b_reg <= "11111111" then 
+                            b_reg <= b_reg + 1;   
+                       end if;
+                       
+                    elsif (BTN_DOWN_CLEAN = '1') then   
+                       
+                       -- Si no ha llegado a 0, se resta 1
+                       if b_reg > "00000000" then
+                           b_reg <= b_reg - 1;
+                       end if;
+                       
+                    end if;       
+                end if;
+            ---------------------------------------------------------------------------------------------------     
+            end if;      
         end if;
-        
     end process;
 
 
@@ -104,18 +172,39 @@ begin
         case current_state is
         
             when M_IDLE =>
-         
+                --Pulso inicial -> PULSE_UP y PULSE_DOWN sin el "clean"
+                if (PULSE_UP = '1' or PULSE_DOWN = '1') then
+                    next_state <= M_UPDATE_COLOR;
+                end if;
+
 
             when M_UPDATE_COLOR =>
+                -- Este estado dura sólo 1 ciclo (incondicional)
+                next_state <= M_TRIGGER_TIMER;
 
 
             when M_TRIGGER_TIMER =>
+                -- Este estado también dura sólo 1 ciclo (incondicional)
+                TIMER_START <= '1';
+                DELAY_SELECT <= '1'; -- Modo Rápido por defecto
+                next_state <= M_WAIT_SLAVE;
 
 
             when M_WAIT_SLAVE =>
-
+                -- Permanecer en este estado mientras que el Slave tenga su "DONE" en 0
+                if (TIMER_DONE = '1') then
+                
+                    -- Si el usuario sigue apretando y el temporizador ha terminado, se repite el ciclo (UPDATE_COLOR)
+                    if (BTN_UP_CLEAN = '1' or BTN_DOWN_CLEAN = '1') then
+                        next_state <= M_UPDATE_COLOR; -- Sumar o restar de forma indefinida hasta el máx/mín
+                    else
+                        next_state <= M_IDLE; -- Cuando se suelta el botón, se vuelve al reposo
+                    end if;
+                end if;
+                
 
             when others =>
+                next_state <= M_IDLE;
                 
         end case;
         
