@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Thu Dec 11 15:16:10 2025
+# Process ID         : 19148
+# Current directory  : C:/Users/omarf/Documents/GitHub/Trabajo-VHDL/RGB_PWM_Ctrol
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent10920 C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\RGB_PWM_Ctrol\RGB_PWM_Ctrol.xpr
+# Log file           : C:/Users/omarf/Documents/GitHub/Trabajo-VHDL/RGB_PWM_Ctrol/vivado.log
+# Journal file       : C:/Users/omarf/Documents/GitHub/Trabajo-VHDL/RGB_PWM_Ctrol\vivado.jou
+# Running On         : OmarPC
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i5-12450H
+# CPU Frequency      : 2496 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 12
+# Host memory        : 16831 MB
+# Swap memory        : 1073 MB
+# Total Virtual      : 17905 MB
+# Available Virtual  : 6306 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/omarf/Documents/GitHub/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.xpr
+update_compile_order -fileset sources_1
