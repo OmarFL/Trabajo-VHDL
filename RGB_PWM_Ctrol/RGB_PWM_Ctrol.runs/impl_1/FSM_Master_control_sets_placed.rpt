@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
-| Date         : Tue Dec 16 17:51:22 2025
+| Date         : Tue Dec 16 18:05:22 2025
 | Host         : DESKTOP-H3I785D running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file FSM_Master_control_sets_placed.rpt
 | Design       : FSM_Master
@@ -74,8 +74,8 @@ Table of Contents
 |  Clock Signal  |            Enable Signal            | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
 +----------------+-------------------------------------+------------------+------------------+----------------+--------------+
 |  CLK_IBUF_BUFG | FSM_onehot_current_state[3]_i_1_n_0 | RESET_IBUF       |                2 |              4 |         2.00 |
-|  CLK_IBUF_BUFG | b_reg                               | RESET_IBUF       |                3 |              8 |         2.67 |
 |  CLK_IBUF_BUFG | g_reg                               | RESET_IBUF       |                3 |              8 |         2.67 |
+|  CLK_IBUF_BUFG | b_reg                               | RESET_IBUF       |                3 |              8 |         2.67 |
 |  CLK_IBUF_BUFG | r_reg                               | RESET_IBUF       |                3 |              8 |         2.67 |
 +----------------+-------------------------------------+------------------+------------------+----------------+--------------+
 
