@@ -226,3 +226,9 @@ Read Physdb Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (M
 Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
 Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 2966.629 ; gain = 0.000
 refresh_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 2966.629 ; gain = 8.625
+close_design
+file mkdir E:/uni/SED/trabajo/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open E:/uni/SED/trabajo/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sim_1/new/FSM_Master_tb.vhd w ]
+add_files -fileset sim_1 E:/uni/SED/trabajo/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sim_1/new/FSM_Master_tb.vhd
+update_compile_order -fileset sim_1

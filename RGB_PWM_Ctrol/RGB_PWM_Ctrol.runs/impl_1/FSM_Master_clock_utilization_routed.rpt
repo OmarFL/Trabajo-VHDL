@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
-| Date         : Tue Dec 16 18:05:52 2025
+| Date         : Tue Dec 16 17:51:53 2025
 | Host         : DESKTOP-H3I785D running 64-bit major release  (build 9200)
 | Command      : report_clock_utilization -file FSM_Master_clock_utilization_routed.rpt
 | Design       : FSM_Master

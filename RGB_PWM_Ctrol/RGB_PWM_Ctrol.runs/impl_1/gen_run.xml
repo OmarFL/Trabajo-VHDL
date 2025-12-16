@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1765904647">
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1765903854">
   <File Type="PA-TCL" Name="FSM_Master.tcl"/>
   <File Type="REPORTS-TCL" Name="FSM_Master_reports.tcl"/>
   <File Type="INIT-TIMING" Name="FSM_Master_timing_summary_init.rpt"/>
@@ -113,7 +113,7 @@
   <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/new/FSM_Master.vhd">
+    <File Path="$PPRDIR/../src/FSM_Master.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -126,14 +126,14 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/RGB_Controller.vhd">
+    <File Path="$PPRDIR/../src/RGB_Controller.vhd">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/FSM_Slave.vhd">
+    <File Path="$PPRDIR/../src/FSM_Slave.vhd">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>

@@ -8,8 +8,3 @@
     <Process Command="vivado.bat" Owner="hugo.sierra" Host="DESKTOP-H3I785D" Pid="34444" HostCore="16" HostMemory="016948453376">
     </Process>
 </ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="hugo.sierra" Host="DESKTOP-H3I785D" Pid="6536" HostCore="16" HostMemory="016948453376">
-    </Process>
-</ProcessHandle>

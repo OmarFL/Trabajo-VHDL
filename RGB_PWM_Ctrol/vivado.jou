@@ -50,3 +50,9 @@ reset_run synth_1
 launch_runs impl_1 -jobs 16
 wait_on_run impl_1
 refresh_design
+close_design
+file mkdir E:/uni/SED/trabajo/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open E:/uni/SED/trabajo/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sim_1/new/FSM_Master_tb.vhd w ]
+add_files -fileset sim_1 E:/uni/SED/trabajo/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sim_1/new/FSM_Master_tb.vhd
+update_compile_order -fileset sim_1
