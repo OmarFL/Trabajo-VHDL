@@ -32,7 +32,12 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity top is
---  Port ( );
+PORT( BTN_UP : in std_logic;
+      BTN_DOWN : in std_logic;
+      SW_R : in std_logic ;
+      SW_G : in std_logic ;
+      RESET : in std_logic ;
+      CLK : in std_logic );
 end top;
 
 architecture Behavioral of top is

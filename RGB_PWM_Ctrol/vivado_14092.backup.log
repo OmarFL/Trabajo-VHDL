@@ -3,26 +3,26 @@
 # SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
 # IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
 # SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
-# Start of session at: Tue Dec 16 17:45:16 2025
-# Process ID         : 42176
-# Current directory  : E:/uni/SED/trabajo/Trabajo-VHDL/RGB_PWM_Ctrol
-# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent30980 E:\uni\SED\trabajo\Trabajo-VHDL\RGB_PWM_Ctrol\RGB_PWM_Ctrol.xpr
-# Log file           : E:/uni/SED/trabajo/Trabajo-VHDL/RGB_PWM_Ctrol/vivado.log
-# Journal file       : E:/uni/SED/trabajo/Trabajo-VHDL/RGB_PWM_Ctrol\vivado.jou
-# Running On         : DESKTOP-H3I785D
+# Start of session at: Mon Dec 15 19:58:27 2025
+# Process ID         : 14092
+# Current directory  : C:/Users/omarf/Documents/GitHub/Trabajo-VHDL/RGB_PWM_Ctrol
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent10396 C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\RGB_PWM_Ctrol\RGB_PWM_Ctrol.xpr
+# Log file           : C:/Users/omarf/Documents/GitHub/Trabajo-VHDL/RGB_PWM_Ctrol/vivado.log
+# Journal file       : C:/Users/omarf/Documents/GitHub/Trabajo-VHDL/RGB_PWM_Ctrol\vivado.jou
+# Running On         : OmarPC
 # Platform           : Windows Server 2016 or Windows 10
 # Operating System   : 26100
-# Processor Detail   : 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz
-# CPU Frequency      : 2304 MHz
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i5-12450H
+# CPU Frequency      : 2496 MHz
 # CPU Physical cores : 8
-# CPU Logical cores  : 16
-# Host memory        : 16948 MB
-# Swap memory        : 10200 MB
-# Total Virtual      : 27149 MB
-# Available Virtual  : 14997 MB
+# CPU Logical cores  : 12
+# Host memory        : 16831 MB
+# Swap memory        : 1073 MB
+# Total Virtual      : 17905 MB
+# Available Virtual  : 7375 MB
 #-----------------------------------------------------------
 start_gui
-open_project E:/uni/SED/trabajo/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.xpr
+open_project C:/Users/omarf/Documents/GitHub/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.xpr
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\emb-plus-vpr-4616\1.0\board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.1 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\emb-plus-vpr-4616\1.1\board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24c:part0:1.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k24c\1.0\board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
@@ -56,7 +56,6 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.3 availab
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.4 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.4\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.0\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.1\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
-INFO: [Project 1-313] Project file moved from 'C:/Users/omarf/Documents/GitHub/Trabajo-VHDL/RGB_PWM_Ctrol' since last save.
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.2 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.2\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.3 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.3\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu108\1.6\board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
@@ -85,7 +84,6 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.3 availab
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180_newl\production\1.0\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180_newl\production\1.1\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk120\production\1.0\board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
-INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'E:/uni/SED/trabajo/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.gen/sources_1'.
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.1 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk120\production\1.1\board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.2 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk120\production\1.2\board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk180\production\1.0\board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
@@ -110,6 +108,8 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 availab
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu216ld\production\2.0\board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu670\2.0\board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu670ld\1.0\board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/omarf/Documents/GitHub/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.gen/sources_1'.
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'C:/Users/omarf/Documents/GitHub/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.ip_user_files'.
 Scanning sources...
 Finished scanning sources
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\emb-plus-vpr-4616\1.0\board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
@@ -131,52 +131,5 @@ INFO: [Common 17-14] Message 'Board 49-26' appears 100 times and further instanc
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/2025.1/Vivado/data/ip'.
-open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 1608.109 ; gain = 239.914
-update_compile_order -fileset sources_1
-launch_runs synth_1 -jobs 16
-WARNING: [Vivado 12-7122] Auto Incremental Compile:: No reference checkpoint was found in run synth_1. Auto-incremental flow will not be run, the standard flow will be run instead.
-[Tue Dec 16 17:46:59 2025] Launched synth_1...
-Run output will be captured here: E:/uni/SED/trabajo/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.runs/synth_1/runme.log
-launch_runs impl_1 -jobs 16
-[Tue Dec 16 17:48:24 2025] Launched impl_1...
-Run output will be captured here: E:/uni/SED/trabajo/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.runs/impl_1/runme.log
-set_property top FSM_Master [current_fileset]
-update_compile_order -fileset sources_1
-reset_run synth_1
-INFO: [Project 1-1160] Copying file E:/uni/SED/trabajo/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.runs/synth_1/top.dcp to E:/uni/SED/trabajo/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/utils_1/imports/synth_1 and adding it to utils fileset
-launch_runs synth_1 -jobs 16
-[Tue Dec 16 17:50:07 2025] Launched synth_1...
-Run output will be captured here: E:/uni/SED/trabajo/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.runs/synth_1/runme.log
-launch_runs impl_1 -jobs 16
-[Tue Dec 16 17:50:54 2025] Launched impl_1...
-Run output will be captured here: E:/uni/SED/trabajo/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.runs/impl_1/runme.log
-open_run impl_1
-INFO: [Device 21-403] Loading part xc7a100tcsg324-1
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1853.598 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2025.1
-INFO: [Project 1-570] Preparing netlist for logic optimization
-Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1935.828 ; gain = 0.000
-INFO: [Timing 38-478] Restoring timing data from binary archive.
-INFO: [Timing 38-479] Binary timing data restore complete.
-INFO: [Project 1-856] Restoring constraints from binary archive.
-INFO: [Project 1-853] Binary constraint restore complete.
-INFO: [Designutils 20-5722] Start Reading Physical Databases.
-Reading placement.
-Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2518.590 ; gain = 0.000
-Reading placer database...
-Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2518.590 ; gain = 0.000
-Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2518.590 ; gain = 0.000
-Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2518.590 ; gain = 0.000
-Reading routing.
-Read RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2518.590 ; gain = 0.000
-Read Physdb Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 2518.590 ; gain = 0.000
-Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 2518.590 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2518.590 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-open_run: Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 2894.215 ; gain = 1233.641
+open_project: Time (s): cpu = 00:00:40 ; elapsed = 00:00:28 . Memory (MB): peak = 1601.895 ; gain = 249.672
 update_compile_order -fileset sources_1
