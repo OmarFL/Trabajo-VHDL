@@ -58,25 +58,81 @@ architecture Behavioral of FSM_Slave is
     signal current_state, next_state : state_type;
 
     -- CONTADOR INTERNO (22 bits de longitud para llegar a 4.000.000)
-    signal counter_reg : integer range 0 to 4100000 := 0;
+    signal counter_reg : integer range 0 to 4194304 := 0; --2^22 = 4194304
     
     -- Señal auxiliar para determinar el límite actual
-    signal limit_val : integer range 0 to 4100000;
+    signal limit_val : integer range 0 to 4194304;
 
 begin
 
-    process (CLK, RESET)
+    -- Selección del límite según la entrada del Master
+    limit_val <= CYCLES_FAST when (DELAY_SELECT = '1') else CYCLES_SLOW;
+
+
+    ----------------------------------------------------------------------------------
+    -- PROCESS 1: BLOQUE PARA ACTUALIZAR EL ESTADO ACTUAL
+    state_register: process(CLK, RESET)
     begin
-    
-    -- Process para conteo
-    
+        if RESET = '1' then
+            current_state <= S_IDLE;
+            counter_reg <= 0;
+        elsif rising_edge(CLK) then
+            current_state <= next_state;
+            
+            -- Lógica del Contador
+            if (current_state = S_IDLE) then
+                counter_reg <= 0; -- Resetear cuenta en reposo
+            elsif (current_state = S_COUNTING) then
+                counter_reg <= counter_reg + 1; -- Sumar 1 en cada ciclo
+            end if;
+        end if;
+    end process;
+
+    ----------------------------------------------------------------------------------
+    -- PROCESS 2: BLOQUE PARA CALCULAR EL ESTADO SIGUIENTE
+    nextstate_decod: process(current_state, TIMER_START, counter_reg, limit_val)
+    begin
+        -- Valores por defecto
+        next_state <= current_state;
+        TIMER_DONE <= '0';
+
+        case current_state is
+        
+            when S_IDLE =>
+                -- Cuando el FSM_Master dé la orden de contar
+                if (TIMER_START = '1') then
+                    next_state <= S_COUNTING;
+                end if;
+                
+
+            when S_COUNTING =>
+                -- Se compara el contador con el límite establecido
+                if (counter_reg >= limit_val) then
+                    next_state <= S_DONE_PULSE;
+                end if;
+                -- Si no ha llegado al límite sigue contando
+                
+
+            when S_DONE_PULSE =>
+                -- Cuando acaba el conteo, se manda la señal de fin al FSM_Master
+                TIMER_DONE <= '1';
+                next_state <= S_IDLE;
+
+
+            when others =>
+                next_state <= S_IDLE;
+                
+                
+        end case;
     end process;
     
-    
-    process (current_state, TIMER_START, counter_reg, limit_val)
-    begin
-    
-    -- Process para lógica de estados
-    end process;
+     ----------------------------------------------------------------------------------
+     -- PROCESS 3: BLOQUE PARA GENERAR LA SALIDA
+     output_decod: process (current_state)
+     begin
+       
+       -- Esto de momento se queda vacío
+       
+     end process;
 
 end Behavioral;

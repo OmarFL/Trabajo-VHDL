@@ -74,7 +74,7 @@ architecture Behavioral of FSM_Master is
 
 begin
 
-     ----------------------------------------------------------------------------------
+    ----------------------------------------------------------------------------------
     -- PROCESS 1: BLOQUE PARA ACTUALIZAR EL ESTADO ACTUAL
    state_register: process (RESET, CLK)
    begin
