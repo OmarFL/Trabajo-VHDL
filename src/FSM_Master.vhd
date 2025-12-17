@@ -40,14 +40,14 @@ entity FSM_Master is
         RESET         : in  STD_LOGIC;
         
         -- Entradas de control (desde INPUT_CONDITIONER)
-        BTN_UP_CLEAN  : in  STD_LOGIC; 
-        BTN_DOWN_CLEAN: in  STD_LOGIC;
-        R_CLEAN       : in  STD_LOGIC;
-        G_CLEAN       : in  STD_LOGIC;
-        B_CLEAN       : in  STD_LOGIC;
+        BTN_UP_CLEAN  : in  STD_LOGIC; -- Viene del subbloque DEBOUNCER_1
+        BTN_DOWN_CLEAN: in  STD_LOGIC; -- Viene del subbloque DEBOUNCER_2
+        R_CLEAN       : in  STD_LOGIC; -- Viene del subbloque DEBOUNCER_3
+        G_CLEAN       : in  STD_LOGIC; -- Viene del subbloque DEBOUNCER_4
+        B_CLEAN       : in  STD_LOGIC; -- Viene del subbloque DEBOUNCER_5
         
-        PULSE_UP      : in  STD_LOGIC;
-        PULSE_DOWN    : in  STD_LOGIC;
+        PULSE_UP      : in  STD_LOGIC; -- Viene del subbloque EDGE_DTR_1
+        PULSE_DOWN    : in  STD_LOGIC; -- Viene del subbloque EDGE_DTR_2
         
         -- Comunicación con el FSM_Slave
         TIMER_DONE    : in  STD_LOGIC;  -- Señal "DONE" del esclavo
