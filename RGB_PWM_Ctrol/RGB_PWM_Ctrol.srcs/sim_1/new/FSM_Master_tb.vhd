@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date: 10.12.2025 12:30:59
+-- Create Date: 16.12.2025 18:10:21
 -- Design Name: 
--- Module Name: top - Behavioral
+-- Module Name: FSM_Master_tb - Behavioral
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
@@ -31,16 +31,11 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity top is
-PORT( BTN_UP : in std_logic;
-      BTN_DOWN : in std_logic;
-      SW_R : in std_logic ;
-      SW_G : in std_logic ;
-      RESET : in std_logic ;
-      CLK : in std_logic );
-end top;
+entity FSM_Master_tb is
+--  Port ( );
+end FSM_Master_tb;
 
-architecture Behavioral of top is
+architecture Behavioral of FSM_Master_tb is
 
 begin
 

@@ -12,8 +12,8 @@
 # Running On         : OmarPC
 # Platform           : Windows Server 2016 or Windows 10
 # Operating System   : 26100
-# Processor Detail   : 12th Gen Intel(R) Core(TM) i5-12450H
-# CPU Frequency      : 2496 MHz
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz
+# CPU Frequency      : 2304 MHz
 # CPU Physical cores : 8
 # CPU Logical cores  : 12
 # Host memory        : 16831 MB
@@ -22,5 +22,37 @@
 # Available Virtual  : 8996 MB
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/omarf/Documents/GitHub/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.xpr
+open_project E:/uni/SED/trabajo/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.xpr
 update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+launch_runs impl_1 -jobs 16
+wait_on_run impl_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top FSM_Master [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+launch_runs impl_1 -jobs 16
+wait_on_run impl_1
+open_run impl_1
+update_compile_order -fileset sources_1
+add_files -norecurse {E:/uni/SED/trabajo/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/FSM_Master.vhd E:/uni/SED/trabajo/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/RGB_Controller.vhd E:/uni/SED/trabajo/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/FSM_Slave.vhd}
+update_compile_order -fileset sources_1
+remove_files  E:/uni/SED/trabajo/Trabajo-VHDL/src/FSM_Master.vhd
+remove_files  E:/uni/SED/trabajo/Trabajo-VHDL/src/FSM_Slave.vhd
+remove_files  E:/uni/SED/trabajo/Trabajo-VHDL/src/RGB_Controller.vhd
+reset_run synth_1
+launch_runs impl_1 -jobs 16
+wait_on_run impl_1
+refresh_design
+close_design
+file mkdir E:/uni/SED/trabajo/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open E:/uni/SED/trabajo/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sim_1/new/FSM_Master_tb.vhd w ]
+add_files -fileset sim_1 E:/uni/SED/trabajo/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sim_1/new/FSM_Master_tb.vhd
+update_compile_order -fileset sim_1
