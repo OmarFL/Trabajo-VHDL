@@ -1,0 +1,370 @@
+/*
+
+AMD Vivado v2025.1 (64-bit) [Major: 2025, Minor: 1]
+SW Build: 6140274 on Thu May 22 00:12:29 MDT 2025
+IP Build: 6138677 on Thu May 22 03:10:11 MDT 2025
+IP Build: 6138677 on Thu May 22 03:10:11 MDT 2025
+
+Process ID (PID): 5864
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Thu Dec 18 20:28:24 CET 2025
+Time zone: 	Central European Standard Time (Europe/Madrid)
+
+OS: Windows 11
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 1920x1080
+Local screen bounds: x = 0, y = 0, width = 1920, height = 1020
+Screen resolution (DPI): 125
+Available screens: 1
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=15
+Scale size: 19
+OS font scaling: 125%
+Anti-Alias Enabled: false
+
+Java version: 	21.0.1 64-bit
+
+Java home: 	C:/Xilinx/2025.1/Vivado/tps/win64/jre21.0.1_12
+Java executable: 	C:/Xilinx/2025.1/Vivado/tps/win64/jre21.0.1_12/bin/java.exe
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.d3d=false, -Dsun.awt.nopixfmt=true, -Dsun.java2d.dpiaware=true, -Dsun.java2d.uiScale.enabled=false, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, -XX:+UseStringDeduplication, -XX:MaxGCPauseMillis=200, -XX:ParallelGCThreads=4, -XX:+ParallelRefProcEnabled, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, -XX:NewSize=80m, -XX:MaxNewSize=80m, -Xms812m, -Xmx6144m, -Xss10m]
+Java initial memory (-Xms): 	812 MB
+Java maximum memory (-Xmx):	 6 GB
+
+User name: 	omarf
+User home directory: C:/Users/omarf
+User working directory: C:/Users/omarf/Documents/GitHub/Trabajo-VHDL/RGB_PWM_Ctrol
+User country: 	ES
+User language: 	es
+User locale: 	es_ES
+
+RDI_BASEROOT: C:/Xilinx/2025.1
+HDI_APPROOT: C:/Xilinx/2025.1/Vivado
+RDI_DATADIR: C:/Xilinx/2025.1/Vivado/data
+RDI_BINDIR: C:/Xilinx/2025.1/Vivado/bin
+
+Vivado preferences file: C:/Users/omarf/AppData/Roaming/Xilinx/Vivado/2025.1/vivado.xml
+Vivado preferences directory: C:/Users/omarf/AppData/Roaming/Xilinx/Vivado/2025.1/
+Vivado layouts directory: C:/Users/omarf/AppData/Roaming/Xilinx/Vivado/2025.1/data/layouts
+PlanAhead jar file: 	C:/Xilinx/2025.1/Vivado/lib/classes/planAhead.jar
+Vivado log file: 	C:/Users/omarf/Documents/GitHub/Trabajo-VHDL/RGB_PWM_Ctrol/vivado.log
+Vivado journal file: 	C:/Users/omarf/Documents/GitHub/Trabajo-VHDL/RGB_PWM_Ctrol/vivado.jou
+Engine tmp dir: 	C:/Users/omarf/Documents/GitHub/Trabajo-VHDL/RGB_PWM_Ctrol/.Xil/Vivado-5864-OmarPC
+Non-Default Parameters:	[]
+
+Xilinx & AMD Environment Variables
+--------------------------------------------------------------------------------------------
+RDI_APPROOT: C:/Xilinx/2025.1/Vivado
+RDI_ARGS:  -gui_launcher_event rodinguilauncherevent18880 "C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\RGB_PWM_Ctrol\RGB_PWM_Ctrol.xpr"
+RDI_ARGS_FUNCTION: RDI_EXEC_DEFAULT
+RDI_BASEROOT: C:/Xilinx/2025.1
+RDI_BINDIR: C:/Xilinx/2025.1/Vivado/bin
+RDI_BINROOT: C:/Xilinx/2025.1/Vivado/bin
+RDI_BUILD: yes
+RDI_CHECK_PROG: True
+RDI_DATADIR: C:/Xilinx/2025.1/Vivado/data
+RDI_INSTALLROOT: C:/Xilinx
+RDI_INSTALLVER: Vivado
+RDI_INSTALLVERSION: 2025.1
+RDI_ISE_PLATFORM: nt64
+RDI_JAVACEFROOT: C:/Xilinx/2025.1/Vivado/tps/win64/java-cef-95.0.4638.69
+RDI_JAVAFXROOT: C:/Xilinx/2025.1/Vivado/tps/win64/javafx-sdk-21.0.1
+RDI_JAVAROOT: C:/Xilinx/2025.1/Vivado/tps/win64/jre21.0.1_12
+RDI_JAVA_VERSION: 21.0.1_12
+RDI_LIBDIR: C:/Xilinx/2025.1/Vivado/lib/win64.o
+RDI_MINGW_LIB: C:/Xilinx/2025.1/Vivado\tps\mingw\6.2.0\win64.o\nt\bin;C:/Xilinx/2025.1/Vivado\tps\mingw\6.2.0\win64.o\nt\libexec\gcc\x86_64-w64-mingw32\6.2.0
+RDI_OPT_EXT: .o
+RDI_PLATFORM: win64
+RDI_PREPEND_PATH: C:/Xilinx/2025.1/Vitis/bin;C:/Xilinx/2025.1/Vivado/ids_lite/ISE/bin/nt64;C:/Xilinx/2025.1/Vivado/ids_lite/ISE/lib/nt64
+RDI_PROG: C:/Xilinx/2025.1/Vivado/bin/unwrapped/win64.o/vivado.exe
+RDI_PROGNAME: vivado.exe
+RDI_PYTHON3: C:/Xilinx/2025.1/Vivado\tps\win64\python-3.13.0
+RDI_PYTHON3_VERSION: 3.13.0
+RDI_PYTHONHOME: C:/Xilinx/2025.1/Vivado\tps\win64\python-3.13.0
+RDI_PYTHONPATH: C:/Xilinx/2025.1/Vivado\tps\win64\python-3.13.0;C:/Xilinx/2025.1/Vivado\tps\win64\python-3.13.0\bin;C:/Xilinx/2025.1/Vivado\tps\win64\python-3.13.0\lib;C:/Xilinx/2025.1/Vivado\tps\win64\python-3.13.0\lib\site-packages
+RDI_PYTHON_LD_LIBPATH: C:/Xilinx/2025.1/Vivado\tps\win64\python-3.13.0\lib
+RDI_SESSION_INFO: C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\RGB_PWM_Ctrol:OMARPC-18-12-2025_20-27-41,10
+RDI_SHARED_DATA: C:/Xilinx/SharedData/2025.1/data
+RDI_TPS_ROOT: C:/Xilinx/2025.1/Vivado/tps/win64
+RDI_USE_JDK21: True
+RDI_VERBOSE: False
+XILINX: C:/Xilinx/2025.1/Vivado/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/2025.1/Vivado/ids_lite/ISE
+XILINX_HLS: C:/Xilinx/2025.1/Vitis
+XILINX_PLANAHEAD: C:/Xilinx/2025.1/Vivado
+XILINX_SDK: C:/Xilinx/2025.1/Vitis
+XILINX_VITIS: C:/Xilinx/2025.1/Vitis
+XILINX_VIVADO: C:/Xilinx/2025.1/Vivado
+_RDI_BINROOT: C:\Xilinx\2025.1\Vivado\bin
+_RDI_CWD: C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\RGB_PWM_Ctrol
+
+
+GUI allocated memory:	812 MB
+GUI max memory:		6,144 MB
+Engine allocated memory: 784 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// WARNING: HEventQueue.dispatchEvent() is taking  3013 ms.
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\RGB_PWM_Ctrol\RGB_PWM_Ctrol.xpr. Version: Vivado v2025.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// Tcl Message: open_project C:/Users/omarf/Documents/GitHub/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.xpr 
+// HMemoryUtils.trashcanNow. Engine heap size: 794 MB. GUI used memory: 74 MB. Current time: 12/18/25, 8:28:26 PM CET
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/omarf/Documents/GitHub/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.xpr 
+// Tcl Message: INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/omarf/Documents/GitHub/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.gen/sources_1'. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [Common 17-14] Message 'Board 49-26' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 130 MB (+133820kb) [00:00:48]
+// [Engine Memory]: 952 MB (+846637kb) [00:00:48]
+// WARNING: HEventQueue.dispatchEvent() is taking  10853 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/2025.1/Vivado/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 991 MB. GUI used memory: 77 MB. Current time: 12/18/25, 8:28:55 PM CET
+// Project name: RGB_PWM_Ctrol; location: C:/Users/omarf/Documents/GitHub/Trabajo-VHDL/RGB_PWM_Ctrol; part: xc7a100tcsg324-1
+// Tcl Message: open_project: Time (s): cpu = 00:01:09 ; elapsed = 00:00:37 . Memory (MB): peak = 1611.660 ; gain = 202.004 
+dismissDialog("Open Project"); // bk (Open Project Progress)
+// [GUI Memory]: 154 MB (+18677kb) [00:01:06]
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 143 seconds
+selectTab((HResource) null, (HResource) null, "Reports", 3); // ab
+selectTab((HResource) null, (HResource) null, "Log", 2); // ab
+selectTab((HResource) null, (HResource) null, "Messages", 1); // ab
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // ab
+selectTab((HResource) null, (HResource) null, "Messages", 1); // ab
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // ab
+// PAPropertyPanels.initPanels (RGB_Controller.vhd) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, RGB_Controller(Behavioral) (RGB_Controller.vhd)]", 4, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, RGB_Controller(Behavioral) (RGB_Controller.vhd)]", 4, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+// WARNING: HEventQueue.dispatchEvent() is taking  1029345 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1449 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  324672 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1335 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 999 MB. GUI used memory: 78 MB. Current time: 12/18/25, 8:58:54 PM CET
+// [Engine Memory]: 1,002 MB (+3107kb) [00:31:47]
+// Elapsed time: 1691 seconds
+selectCodeEditor("RGB_Controller.vhd", 1, 347); // ae (RGB_Controller.vhd)
+typeControlKey((HResource) null, "RGB_Controller.vhd", 'v'); // ae (RGB_Controller.vhd)
+// Elapsed time: 29 seconds
+selectCodeEditor("RGB_Controller.vhd", 496, 351); // ae (RGB_Controller.vhd)
+// Elapsed time: 16 seconds
+selectCodeEditor("RGB_Controller.vhd", 271, 174); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 459, 224); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 483, 288); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 564, 256); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 95, 95); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 311, 92); // ae (RGB_Controller.vhd)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FSM_Master(Behavioral) (FSM_Master.vhd)]", 2, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FSM_Master(Behavioral) (FSM_Master.vhd)]", 2, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RGB_Controller.vhd", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FSM_Master.vhd", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("FSM_Master.vhd", 73, 30); // ae (FSM_Master.vhd)
+typeControlKey((HResource) null, "FSM_Master.vhd", 'c'); // ae (FSM_Master.vhd)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RGB_Controller.vhd", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("RGB_Controller.vhd", 113, 156); // ae (RGB_Controller.vhd)
+typeControlKey((HResource) null, "RGB_Controller.vhd", 'v'); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 508, 410); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 395, 295); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 532, 88); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 114, 35); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 72, 253); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 68, 241); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 68, 286); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 65, 298); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 73, 323); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 70, 348); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 72, 374); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 73, 219); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 69, 242); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 69, 284); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 69, 302); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 72, 323); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 68, 373); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 72, 387); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 68, 407); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 652, 261); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 660, 200); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 633, 328); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 702, 301); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 654, 286); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 695, 238); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 698, 215); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 700, 176); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 691, 164); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 695, 144); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 697, 119); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 702, 94); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 380, 301); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 91, 303); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 211, 218); // ae (RGB_Controller.vhd)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FSM_Slave(Behavioral) (FSM_Slave.vhd)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FSM_Slave(Behavioral) (FSM_Slave.vhd)]", 3, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectCodeEditor("FSM_Slave.vhd", 72, 305); // ae (FSM_Slave.vhd)
+typeControlKey((HResource) null, "FSM_Slave.vhd", 'c'); // ae (FSM_Slave.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,013 MB. GUI used memory: 81 MB. Current time: 12/18/25, 9:02:54 PM CET
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FSM_Master.vhd", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("FSM_Master.vhd", 378, 251); // ae (FSM_Master.vhd)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RGB_Controller.vhd", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("RGB_Controller.vhd", 108, 201); // ae (RGB_Controller.vhd)
+typeControlKey((HResource) null, "RGB_Controller.vhd", 'v'); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 70, 224); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 73, 262); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 387, 263); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 73, 264); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 69, 288); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 69, 308); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 685, 310); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 782, 282); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 662, 254); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 304, 193); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 298, 86); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 253, 217); // ae (RGB_Controller.vhd)
+// Elapsed time: 10 seconds
+selectCodeEditor("RGB_Controller.vhd", 90, 279); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 63, 298); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 175, 284); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 175, 284, false, false, false, false, true); // ae (RGB_Controller.vhd) - Double Click
+selectCodeEditor("RGB_Controller.vhd", 331, 286); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 466, 321); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 418, 342); // ae (RGB_Controller.vhd)
+// Elapsed time: 27 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FSM_Master.vhd", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RGB_Controller.vhd", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FSM_Master.vhd", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RGB_Controller.vhd", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed time: 11 seconds
+selectCodeEditor("RGB_Controller.vhd", 135, 216); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 193, 268); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 260, 100); // ae (RGB_Controller.vhd)
+// Elapsed time: 12 seconds
+selectCodeEditor("RGB_Controller.vhd", 341, 324); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 309, 136); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 332, 286); // ae (RGB_Controller.vhd)
+// Elapsed time: 24 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FSM_Master.vhd", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RGB_Controller.vhd", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("RGB_Controller.vhd", 43, 179); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 118, 174); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 382, 197); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 32, 174); // ae (RGB_Controller.vhd)
+// Elapsed time: 23 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FSM_Master.vhd", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RGB_Controller.vhd", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed time: 26 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FSM_Master.vhd", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RGB_Controller.vhd", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("RGB_Controller.vhd", 30, 152); // ae (RGB_Controller.vhd)
+typeControlKey((HResource) null, "RGB_Controller.vhd", 'c'); // ae (RGB_Controller.vhd)
+// Elapsed time: 26 seconds
+selectCodeEditor("RGB_Controller.vhd", 432, 181); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 361, 238); // ae (RGB_Controller.vhd)
+// Elapsed time: 191 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FSM_Master.vhd", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RGB_Controller.vhd", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("RGB_Controller.vhd", 68, 224); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 61, 242); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 64, 264); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 514, 274); // ae (RGB_Controller.vhd)
+// Elapsed time: 11 seconds
+selectCodeEditor("RGB_Controller.vhd", 95, 240); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 89, 260); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 552, 233); // ae (RGB_Controller.vhd)
+// Elapsed time: 179 seconds
+selectCodeEditor("RGB_Controller.vhd", 101, 99); // ae (RGB_Controller.vhd)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FSM_Master.vhd", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RGB_Controller.vhd", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FSM_Master.vhd", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RGB_Controller.vhd", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed time: 13 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // C (RDIResourceCommand.RDICommands_SAVE_FILE)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 46m:29s
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 46m:31s
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: La operación se completó correctamente.  
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 46m:33s
+selectCodeEditor("RGB_Controller.vhd", 196, 173); // ae (RGB_Controller.vhd)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 46m:35s
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 46m:37s
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 46m:39s
+selectCodeEditor("RGB_Controller.vhd", 512, 201); // ae (RGB_Controller.vhd)
+// Elapsed time: 55 seconds
+selectCodeEditor("RGB_Controller.vhd", 319, 190); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 339, 191); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 609, 150); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 370, 139); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 556, 281); // ae (RGB_Controller.vhd)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // C (RDIResourceCommand.RDICommands_UNDO)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // C (RDIResourceCommand.RDICommands_UNDO)
+selectCodeEditor("RGB_Controller.vhd", 568, 218); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 313, 326); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 416, 299); // ae (RGB_Controller.vhd)
+// Elapsed time: 38 seconds
+selectCodeEditor("RGB_Controller.vhd", 381, 303); // ae (RGB_Controller.vhd)
+// Elapsed time: 15 seconds
+selectCodeEditor("RGB_Controller.vhd", 145, 327); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 384, 332); // ae (RGB_Controller.vhd)
+// Elapsed time: 10 seconds
+selectCodeEditor("RGB_Controller.vhd", 345, 329); // ae (RGB_Controller.vhd)
+// Elapsed time: 13 seconds
+selectCodeEditor("RGB_Controller.vhd", 568, 366); // ae (RGB_Controller.vhd)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FSM_Master.vhd", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RGB_Controller.vhd", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed time: 41 seconds
+selectCodeEditor("RGB_Controller.vhd", 111, 333); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 111, 346); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 173, 291); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 114, 363); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 319, 326); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 238, 349); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 223, 366); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 231, 346); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 231, 324); // ae (RGB_Controller.vhd)
+selectCodeEditor("RGB_Controller.vhd", 774, 389); // ae (RGB_Controller.vhd)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // C (RDIResourceCommand.RDICommands_SAVE_FILE)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 50m:45s
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 50m:47s
