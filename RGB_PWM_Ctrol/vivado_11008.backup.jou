@@ -3,10 +3,10 @@
 # SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
 # IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
 # SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
-# Start of session at: Thu Dec 11 15:16:10 2025
-# Process ID         : 19148
+# Start of session at: Thu Dec 18 10:18:11 2025
+# Process ID         : 11008
 # Current directory  : C:/Users/omarf/Documents/GitHub/Trabajo-VHDL/RGB_PWM_Ctrol
-# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent10920 C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\RGB_PWM_Ctrol\RGB_PWM_Ctrol.xpr
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent9060 C:\Users\omarf\Documents\GitHub\Trabajo-VHDL\RGB_PWM_Ctrol\RGB_PWM_Ctrol.xpr
 # Log file           : C:/Users/omarf/Documents/GitHub/Trabajo-VHDL/RGB_PWM_Ctrol/vivado.log
 # Journal file       : C:/Users/omarf/Documents/GitHub/Trabajo-VHDL/RGB_PWM_Ctrol\vivado.jou
 # Running On         : OmarPC
@@ -19,7 +19,7 @@
 # Host memory        : 16831 MB
 # Swap memory        : 1073 MB
 # Total Virtual      : 17905 MB
-# Available Virtual  : 6306 MB
+# Available Virtual  : 7035 MB
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/omarf/Documents/GitHub/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.xpr
