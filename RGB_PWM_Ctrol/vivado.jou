@@ -12,8 +12,8 @@
 # Running On         : OmarPC
 # Platform           : Windows Server 2016 or Windows 10
 # Operating System   : 26100
-# Processor Detail   : 12th Gen Intel(R) Core(TM) i5-12450H
-# CPU Frequency      : 2496 MHz
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz
+# CPU Frequency      : 2304 MHz
 # CPU Physical cores : 8
 # CPU Logical cores  : 12
 # Host memory        : 16831 MB
@@ -22,6 +22,6 @@
 # Available Virtual  : 6966 MB
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/omarf/Documents/GitHub/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.xpr
+open_project E:/uni/SED/trabajo/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.xpr
 update_compile_order -fileset sources_1
 update_compile_order -fileset sources_1
