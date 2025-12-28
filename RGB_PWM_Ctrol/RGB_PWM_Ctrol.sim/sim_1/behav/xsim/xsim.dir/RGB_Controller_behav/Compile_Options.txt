@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "RGB_Controller_behav" "xil_defaultlib.RGB_Controller" -log "elaborate.log" 

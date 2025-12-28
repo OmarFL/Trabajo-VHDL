@@ -52,6 +52,7 @@ architecture Behavioral of FSM_Slave is
     -- CONSTANTES DE TIEMPO
     constant CYCLES_FAST : integer := 1000000;    -- Rápido: 10ms = 1.000.000 ciclos
     constant CYCLES_SLOW : integer := 4000000;    -- Lento: 40ms = 4.000.000 ciclos
+    constant CYCLES_TEST: integer := 10;        -- Para pruebas: 10 ciclos
 
     -- ESTADOS
     type state_type is (S_IDLE, S_COUNTING, S_DONE_PULSE);
@@ -66,7 +67,7 @@ architecture Behavioral of FSM_Slave is
 begin
 
     -- Selección del límite según la entrada del FSM_Master (opcional)
-    limit_val <= CYCLES_FAST when (DELAY_SELECT = '1') else CYCLES_SLOW;
+    limit_val <= CYCLES_FAST when (DELAY_SELECT = '1') else CYCLES_TEST; --Ojo, he cambiado el lento por el test
 
 
     ----------------------------------------------------------------------------------

@@ -1,0 +1,4 @@
+Running: xsim.dir/RGB_Controller_tb_behav/xsimk.exe -simmode gui -wdb RGB_Controller_tb_behav.wdb -simrunnum 0 -socket 53721
+Design successfully loaded
+Design Loading Memory Usage: 11332 KB (Peak: 11332 KB)
+Design Loading CPU Usage: 15 ms
