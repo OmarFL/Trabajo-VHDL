@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="RGB_Controller_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="RGB_Controller_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,166.001 ns"></ZoomEndTime>
+      <Cursor1Time time="1,420.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="173"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="13" />
+   <wvobject fp_name="/RGB_Controller_tb/CLK" type="logic">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RGB_Controller_tb/RESET" type="logic">
+      <obj_property name="ElementShortName">RESET</obj_property>
+      <obj_property name="ObjectShortName">RESET</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RGB_Controller_tb/PULSE_UP" type="logic">
+      <obj_property name="ElementShortName">PULSE_UP</obj_property>
+      <obj_property name="ObjectShortName">PULSE_UP</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RGB_Controller_tb/PULSE_DOWN" type="logic">
+      <obj_property name="ElementShortName">PULSE_DOWN</obj_property>
+      <obj_property name="ObjectShortName">PULSE_DOWN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RGB_Controller_tb/BTN_UP_CLEAN" type="logic">
+      <obj_property name="ElementShortName">BTN_UP_CLEAN</obj_property>
+      <obj_property name="ObjectShortName">BTN_UP_CLEAN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RGB_Controller_tb/BTN_DOWN_CLEAN" type="logic">
+      <obj_property name="ElementShortName">BTN_DOWN_CLEAN</obj_property>
+      <obj_property name="ObjectShortName">BTN_DOWN_CLEAN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RGB_Controller_tb/R_CLEAN" type="logic">
+      <obj_property name="ElementShortName">R_CLEAN</obj_property>
+      <obj_property name="ObjectShortName">R_CLEAN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RGB_Controller_tb/G_CLEAN" type="logic">
+      <obj_property name="ElementShortName">G_CLEAN</obj_property>
+      <obj_property name="ObjectShortName">G_CLEAN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RGB_Controller_tb/B_CLEAN" type="logic">
+      <obj_property name="ElementShortName">B_CLEAN</obj_property>
+      <obj_property name="ObjectShortName">B_CLEAN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RGB_Controller_tb/RED_VAL" type="array">
+      <obj_property name="ElementShortName">RED_VAL[7:0]</obj_property>
+      <obj_property name="ObjectShortName">RED_VAL[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RGB_Controller_tb/GREEN_VAL" type="array">
+      <obj_property name="ElementShortName">GREEN_VAL[7:0]</obj_property>
+      <obj_property name="ObjectShortName">GREEN_VAL[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RGB_Controller_tb/BLUE_VAL" type="array">
+      <obj_property name="ElementShortName">BLUE_VAL[7:0]</obj_property>
+      <obj_property name="ObjectShortName">BLUE_VAL[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RGB_Controller_tb/CLK_PERIOD" type="other">
+      <obj_property name="ElementShortName">CLK_PERIOD</obj_property>
+      <obj_property name="ObjectShortName">CLK_PERIOD</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1765904647" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/top.dcp">
-  <File Type="PA-TCL" Name="FSM_Master.tcl"/>
-  <File Type="REPORTS-TCL" Name="FSM_Master_reports.tcl"/>
-  <File Type="RDS-RDS" Name="FSM_Master.vds"/>
-  <File Type="RDS-PROPCONSTRS" Name="FSM_Master_drc_synth.rpt"/>
-  <File Type="RDS-UTIL" Name="FSM_Master_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="FSM_Master_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="FSM_Master.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="FSM_Master_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="FSM_Master_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1766948359" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/top.dcp">
+  <File Type="PA-TCL" Name="top.tcl"/>
+  <File Type="REPORTS-TCL" Name="top_reports.tcl"/>
+  <File Type="RDS-RDS" Name="top.vds"/>
+  <File Type="RDS-PROPCONSTRS" Name="top_drc_synth.rpt"/>
+  <File Type="RDS-UTIL" Name="top_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="top_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="top.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="top_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="top_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/FSM_Master.vhd">
@@ -17,37 +17,35 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/top.vhd">
+    <File Path="$PSRCDIR/sources_1/new/FSM_Slave.vhd">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/RGB_Controller.vhd">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/FSM_Slave.vhd">
+    <File Path="$PSRCDIR/sources_1/new/top.vhd">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="FSM_Master"/>
+      <Option Name="TopModule" Val="top"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
     <Filter Type="Constrs"/>
     <File Path="$PSRCDIR/constrs_1/imports/Downloads/Nexys-A7-100T-Master.xdc">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../Practicca_3/Practicca_3.srcs/constrs_1/imports/Downloads/Nexys-A7-100T-Master.xdc"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Practicca_3/Practicca_3.srcs/constrs_1/imports/Downloads/Nexys-A7-100T-Master.xdc"/>
         <Attr Name="ImportTime" Val="1765363912"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>

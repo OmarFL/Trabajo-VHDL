@@ -1,0 +1,12 @@
+
+{ 
+    crc :  16544033200792103052  , 
+    ccp_crc :  0  , 
+    cmdline : " --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot RGB_Controller_behav xil_defaultlib.RGB_Controller" , 
+    buildDate : "May 22 2025" , 
+    buildTime : "00:13:55" , 
+    linkCmd : "C:\\Xilinx\\2025.1\\Vivado\\data\\..\\tps\\mingw\\6.2.0\\win64.o\\nt\\bin\\gcc.exe -Wa,-W  -O -Wl,--stack,104857600 -o \"xsim.dir/RGB_Controller_behav/xsimk.exe\"   \"xsim.dir/RGB_Controller_behav/obj/xsim_0.win64.obj\" \"xsim.dir/RGB_Controller_behav/obj/xsim_1.win64.obj\" -L\"C:\\Xilinx\\2025.1\\Vivado\\lib\\win64.o\" -lxv_simulator_kernel   -lxv_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

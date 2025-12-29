@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../RGB_PWM_Ctrol.srcs/sources_1/new/FSM_Master.vhd" \
+"../../../../RGB_PWM_Ctrol.srcs/sources_1/new/FSM_Slave.vhd" \
+"../../../../RGB_PWM_Ctrol.srcs/sources_1/new/RGB_Controller.vhd" \
+"../../../../RGB_PWM_Ctrol.srcs/sim_1/new/RGB_Controller_tb.vhd" \
+
+# Do not sort compile order
+nosort

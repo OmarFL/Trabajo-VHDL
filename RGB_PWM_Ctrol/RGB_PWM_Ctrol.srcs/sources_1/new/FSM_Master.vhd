@@ -141,7 +141,7 @@ begin
                     if (BTN_UP_CLEAN = '1') then
 
                        -- Si no ha llegado a 255, se suma 1
-                       if b_reg <= "11111111" then 
+                       if b_reg < "11111111" then 
                             b_reg <= b_reg + 1;   
                        end if;
                        
@@ -186,7 +186,7 @@ begin
             when M_TRIGGER_TIMER =>
                 -- Este estado también dura sólo 1 ciclo (incondicional)
                 TIMER_START <= '1';
-                DELAY_SELECT <= '1'; -- Modo Rápido por defecto
+                DELAY_SELECT <= '0'; 
                 next_state <= M_WAIT_SLAVE;
 
 
