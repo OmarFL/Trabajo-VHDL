@@ -1,77 +1,90 @@
-LIBRARY IEEE;
-USE IEEE.STD_LOGIC_1164.ALL;
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
 
-ENTITY Input_Conditioner IS
-    PORT (
-        CLK          : IN  std_logic;
-        RESET        : IN  std_logic;
-        
-        -- ENTRADAS (2 Botones + 3 Switches)
-        BTN_UP_IN    : IN  std_logic;
-        BTN_DOWN_IN  : IN  std_logic;
-        SW_R_IN      : IN  std_logic; -- Interruptor Canal Rojo
-        SW_G_IN      : IN  std_logic; -- Interruptor Canal Verde
-        SW_B_IN      : IN  std_logic; -- Interruptor Canal Azul
-        
-        -- SALIDAS LIMPIAS (Para la FSM)
-        BTN_UP_OK    : OUT std_logic; -- Pulso corto (Edge Detect)
-        BTN_DOWN_OK  : OUT std_logic; -- Pulso corto (Edge Detect)
-        SW_R_OK      : OUT std_logic; -- Nivel estable (On/Off)
-        SW_G_OK      : OUT std_logic; -- Nivel estable (On/Off)
-        SW_B_OK      : OUT std_logic  -- Nivel estable (On/Off)
+entity Input_Conditioner is
+    port (
+        CLK          : in  std_logic;
+        RESET        : in  std_logic;
+
+        -- Entradas físicas
+        BTN_UP_IN    : in  std_logic;
+        BTN_DOWN_IN  : in  std_logic;
+        SW_R         : in  std_logic;
+        SW_G         : in  std_logic;
+        SW_B         : in  std_logic;
+
+        -- Salidas limpias
+        BTN_UP_OK      : out std_logic;
+        BTN_DOWN_OK    : out std_logic;
+        BTN_UP_CLEAN   : out std_logic; --salida del debouncer
+        BTN_DOWN_CLEAN : out std_logic; --salida del debouncer
+        R_CLEAN        : out std_logic;
+        G_CLEAN        : out std_logic;
+        B_CLEAN        : out std_logic
     );
-END Input_Conditioner;
+end Input_Conditioner;
 
-ARCHITECTURE Structural OF Input_Conditioner IS
+architecture Structural of Input_Conditioner is
 
-    COMPONENT SYNCHRNZR
-        PORT(CLK : IN std_logic; ASYNC_IN : IN std_logic; SYNC_OUT : OUT std_logic);
-    END COMPONENT;
+    component SYNCHRNZR
+        port (
+            CLK      : in  std_logic;
+            ASYNC_IN : in  std_logic;
+            SYNC_OUT : out std_logic
+        );
+    end component;
 
-    COMPONENT Debouncer
-        PORT(CLK : IN std_logic; RESET : IN std_logic; BTN_IN : IN std_logic; BTN_OUT : OUT std_logic);
-    END COMPONENT;
+    component Debouncer
+        generic (
+            TIMEOUT : integer := 2000000
+        );
+        port (
+            CLK     : in  std_logic;
+            RESET   : in  std_logic;
+            BTN_IN  : in  std_logic;
+            BTN_OUT : out std_logic
+        );
+    end component;
 
-    COMPONENT EDGEDTCTR
-        PORT(CLK : IN std_logic; SYNC_IN : IN std_logic; EDGE : OUT std_logic);
-    END COMPONENT;
+    component EDGEDTCTR
+        port (
+            CLK     : in  std_logic;
+            SYNC_IN : in  std_logic;
+            EDGE    : out std_logic
+        );
+    end component;
 
     -- Señales internas
-    SIGNAL s_sync_up, s_deb_up : std_logic;
-    SIGNAL s_sync_dw, s_deb_dw : std_logic;
+    signal s_sync_up, s_deb_up : std_logic;
+    signal s_sync_dw, s_deb_dw : std_logic;
+    signal s_sync_r    : std_logic;
+    signal s_sync_g    : std_logic;
+    signal s_sync_b    : std_logic;
+
+begin
+
+    -- === BOTÓN UP ===
+    U1: SYNCHRNZR port map (CLK, BTN_UP_IN, s_sync_up);
+    U2: Debouncer generic map (5) port map (CLK, RESET, s_sync_up, s_deb_up);
+    U3: EDGEDTCTR port map (CLK, s_deb_up, BTN_UP_OK);
+
+    -- === BOTÓN DOWN ===
+    U4: SYNCHRNZR port map (CLK, BTN_DOWN_IN, s_sync_dw);
+    U5: Debouncer generic map (5) port map (CLK, RESET, s_sync_dw, s_deb_dw);
+    U6: EDGEDTCTR port map (CLK, s_deb_dw, BTN_DOWN_OK);
+
+    -- === SWITCH R ===
+    U7: SYNCHRNZR port map (CLK, SW_R, s_sync_r);
+    U8: Debouncer generic map (5) port map (CLK, RESET, s_sync_r, R_CLEAN);
+    -- === SWITCH G ===
+    U10: SYNCHRNZR port map (CLK, SW_G, s_sync_g);
+    U11: Debouncer generic map (5) port map (CLK, RESET, s_sync_g, G_CLEAN);
+
+    -- === SWITCH B ===
+    U13: SYNCHRNZR port map (CLK, SW_B, s_sync_b);
+    U14: Debouncer generic map (5) port map (CLK, RESET, s_sync_b, B_CLEAN);
     
-    SIGNAL s_sync_r : std_logic;
-    SIGNAL s_sync_g : std_logic;
-    SIGNAL s_sync_b : std_logic;
+    BTN_UP_CLEAN <= s_deb_up;
+    BTN_DOWN_CLEAN <= s_deb_dw;
 
-BEGIN
-
-    -- 1. BOTONES DE SUBIR/BAJAR (Llevan Edge Detector)
-    
-    -- UP
-    U_Sync_UP : SYNCHRNZR PORT MAP(CLK, BTN_UP_IN, s_sync_up);
-    U_Deb_UP  : Debouncer PORT MAP(CLK, RESET, s_sync_up, s_deb_up);
-    U_Edge_UP : EDGEDTCTR PORT MAP(CLK, s_deb_up, BTN_UP_OK);
-
-    -- DOWN
-    U_Sync_DW : SYNCHRNZR PORT MAP(CLK, BTN_DOWN_IN, s_sync_dw);
-    U_Deb_DW  : Debouncer PORT MAP(CLK, RESET, s_sync_dw, s_deb_dw);
-    U_Edge_DW : EDGEDTCTR PORT MAP(CLK, s_deb_dw, BTN_DOWN_OK);
-
-
-    -- 2. INTERRUPTORES DE SELECCIÓN (Sin Edge Detector)
-    -- Solo Sincronizador + Debouncer, para mantener la señal activa
-
-    -- Rojo
-    U_Sync_R : SYNCHRNZR PORT MAP(CLK, SW_R_IN, s_sync_r);
-    U_Deb_R  : Debouncer PORT MAP(CLK, RESET, s_sync_r, SW_R_OK);
-
-    -- Verde
-    U_Sync_G : SYNCHRNZR PORT MAP(CLK, SW_G_IN, s_sync_g);
-    U_Deb_G  : Debouncer PORT MAP(CLK, RESET, s_sync_g, SW_G_OK);
-
-    -- Azul
-    U_Sync_B : SYNCHRNZR PORT MAP(CLK, SW_B_IN, s_sync_b);
-    U_Deb_B  : Debouncer PORT MAP(CLK, RESET, s_sync_b, SW_B_OK);
-
-END Structural;
+end Structural;

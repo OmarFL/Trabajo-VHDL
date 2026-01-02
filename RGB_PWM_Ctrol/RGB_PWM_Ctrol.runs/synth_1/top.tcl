@@ -74,9 +74,13 @@ set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
+  E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/Debouncer.vhd
+  E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/Edge_detector.vhd
   E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/FSM_Master.vhd
   E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/FSM_Slave.vhd
+  E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/Input_Conditioner.vhd
   E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/RGB_Controller.vhd
+  E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/Synchronizer.vhd
   E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/top.vhd
 }
 OPTRACE "Adding files" END { }

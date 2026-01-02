@@ -8,7 +8,7 @@
   **** SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
   **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
   **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
-  **** Start of session at: Sun Dec 28 19:59:21 2025
+  **** Start of session at: Fri Jan  2 20:04:29 2026
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 
@@ -21,14 +21,16 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 7420
+INFO: [Synth 8-7075] Helper process launched with PID 7244
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1196.074 ; gain = 493.414
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1200.480 ; gain = 494.434
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'top' [E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/top.vhd:52]
-INFO: [Synth 8-3491] module 'RGB_Controller' declared at 'E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/RGB_Controller.vhd:35' bound to instance 'Inst_RGB' of component 'RGB_Controller' [E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/top.vhd:89]
+INFO: [Synth 8-3491] module 'RGB_Controller' declared at 'E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/RGB_Controller.vhd:35' bound to instance 'Inst_RGB' of component 'RGB_Controller' [E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/top.vhd:111]
 INFO: [Synth 8-638] synthesizing module 'RGB_Controller' [E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/RGB_Controller.vhd:58]
 INFO: [Synth 8-3491] module 'FSM_Master' declared at 'E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/FSM_Master.vhd:37' bound to instance 'Inst_Master' of component 'FSM_Master' [E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/RGB_Controller.vhd:108]
 INFO: [Synth 8-638] synthesizing module 'FSM_Master' [E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/FSM_Master.vhd:66]
@@ -40,38 +42,53 @@ INFO: [Synth 8-3491] module 'FSM_Slave' declared at 'E:/uni/SED/Trabajo-VHDL/RGB
 INFO: [Synth 8-638] synthesizing module 'FSM_Slave' [E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/FSM_Slave.vhd:50]
 INFO: [Synth 8-256] done synthesizing module 'FSM_Slave' (0#1) [E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/FSM_Slave.vhd:50]
 INFO: [Synth 8-256] done synthesizing module 'RGB_Controller' (0#1) [E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/RGB_Controller.vhd:58]
+INFO: [Synth 8-3491] module 'Input_Conditioner' declared at 'E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/Input_Conditioner.vhd:4' bound to instance 'Inst_input' of component 'Input_Conditioner' [E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/top.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'Input_Conditioner' [E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/Input_Conditioner.vhd:27]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/Synchronizer.vhd:4' bound to instance 'U1' of component 'SYNCHRNZR' [E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/Input_Conditioner.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'SYNCHRNZR' [E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/Synchronizer.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'SYNCHRNZR' (0#1) [E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/Synchronizer.vhd:12]
+	Parameter TIMEOUT bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'Debouncer' declared at 'E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/Debouncer.vhd:5' bound to instance 'U2' of component 'Debouncer' [E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/Input_Conditioner.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'Debouncer' [E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/Debouncer.vhd:17]
+	Parameter TIMEOUT bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Debouncer' (0#1) [E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/Debouncer.vhd:17]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/Edge_detector.vhd:4' bound to instance 'U3' of component 'EDGEDTCTR' [E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/Input_Conditioner.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'EDGEDTCTR' [E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/Edge_detector.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'EDGEDTCTR' (0#1) [E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/Edge_detector.vhd:12]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/Synchronizer.vhd:4' bound to instance 'U4' of component 'SYNCHRNZR' [E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/Input_Conditioner.vhd:72]
+	Parameter TIMEOUT bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'Debouncer' declared at 'E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/Debouncer.vhd:5' bound to instance 'U5' of component 'Debouncer' [E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/Input_Conditioner.vhd:73]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/Edge_detector.vhd:4' bound to instance 'U6' of component 'EDGEDTCTR' [E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/Input_Conditioner.vhd:74]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/Synchronizer.vhd:4' bound to instance 'U7' of component 'SYNCHRNZR' [E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/Input_Conditioner.vhd:77]
+	Parameter TIMEOUT bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'Debouncer' declared at 'E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/Debouncer.vhd:5' bound to instance 'U8' of component 'Debouncer' [E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/Input_Conditioner.vhd:78]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/Synchronizer.vhd:4' bound to instance 'U10' of component 'SYNCHRNZR' [E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/Input_Conditioner.vhd:80]
+	Parameter TIMEOUT bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'Debouncer' declared at 'E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/Debouncer.vhd:5' bound to instance 'U11' of component 'Debouncer' [E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/Input_Conditioner.vhd:81]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/Synchronizer.vhd:4' bound to instance 'U13' of component 'SYNCHRNZR' [E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/Input_Conditioner.vhd:84]
+	Parameter TIMEOUT bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'Debouncer' declared at 'E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/Debouncer.vhd:5' bound to instance 'U14' of component 'Debouncer' [E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/Input_Conditioner.vhd:85]
+INFO: [Synth 8-256] done synthesizing module 'Input_Conditioner' (0#1) [E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/Input_Conditioner.vhd:27]
 INFO: [Synth 8-256] done synthesizing module 'top' (0#1) [E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/top.vhd:52]
 WARNING: [Synth 8-3848] Net LED_R_PWM in module/entity top does not have driver. [E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/top.vhd:46]
 WARNING: [Synth 8-3848] Net LED_G_PWM in module/entity top does not have driver. [E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/top.vhd:47]
 WARNING: [Synth 8-3848] Net LED_B_PWM in module/entity top does not have driver. [E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/top.vhd:48]
-WARNING: [Synth 8-3848] Net UP_CLEAN in module/entity top does not have driver. [E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/top.vhd:53]
-WARNING: [Synth 8-3848] Net DOWN_CLEAN in module/entity top does not have driver. [E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/top.vhd:54]
-WARNING: [Synth 8-3848] Net PULSE_UP in module/entity top does not have driver. [E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/top.vhd:55]
-WARNING: [Synth 8-3848] Net PULSE_DOWN in module/entity top does not have driver. [E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/top.vhd:56]
-WARNING: [Synth 8-3848] Net R_CLEAN in module/entity top does not have driver. [E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/top.vhd:57]
-WARNING: [Synth 8-3848] Net G_CLEAN in module/entity top does not have driver. [E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/top.vhd:58]
-WARNING: [Synth 8-3848] Net B_CLEAN in module/entity top does not have driver. [E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/top.vhd:59]
 WARNING: [Synth 8-7129] Port LED_R_PWM in module top is either unconnected or has no load
 WARNING: [Synth 8-7129] Port LED_G_PWM in module top is either unconnected or has no load
 WARNING: [Synth 8-7129] Port LED_B_PWM in module top is either unconnected or has no load
-WARNING: [Synth 8-7129] Port BTN_UP in module top is either unconnected or has no load
-WARNING: [Synth 8-7129] Port BTN_DOWN in module top is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SW_R in module top is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SW_G in module top is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SW_B in module top is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1303.941 ; gain = 601.281
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1308.539 ; gain = 602.492
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1303.941 ; gain = 601.281
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1308.539 ; gain = 602.492
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1303.941 ; gain = 601.281
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1308.539 ; gain = 602.492
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1303.941 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1308.539 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -178,36 +195,28 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1375.812 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1372.973 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1375.812 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1372.973 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1375.812 ; gain = 673.152
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1372.973 ; gain = 666.926
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1375.812 ; gain = 673.152
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1372.973 ; gain = 666.926
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1375.812 ; gain = 673.152
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Preparing Guide Design
----------------------------------------------------------------------------------
-CRITICAL WARNING: [Synth 8-6895] The reference checkpoint E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/utils_1/imports/synth_1/top.dcp is not suitable for use with incremental synthesis for this design. Please regenerate the checkpoint for this design with -incremental_synth switch in the same Vivado session that synth_design has been run. Synthesis will continue with the default flow
----------------------------------------------------------------------------------
-Finished Doing Graph Differ : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1375.812 ; gain = 673.152
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Preparing Guide Design : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1375.812 ; gain = 673.152
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1372.973 ; gain = 666.926
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'FSM_Master'
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'FSM_Slave'
@@ -229,18 +238,8 @@ INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using e
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'FSM_Slave'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1375.812 ; gain = 673.152
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1372.973 ; gain = 666.926
 ---------------------------------------------------------------------------------
-
-
-Incremental Synthesis Report Summary:
-
-1. Incremental synthesis run: no
-
-   Reason for not running incremental synthesis : 
-
-
-INFO: [Synth 8-7130] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -248,16 +247,20 @@ Detailed RTL Component Info :
 +---Adders : 
 	   2 Input   23 Bit       Adders := 1     
 	   2 Input    8 Bit       Adders := 3     
+	   2 Input    3 Bit       Adders := 5     
 +---Registers : 
 	               23 Bit    Registers := 1     
 	                8 Bit    Registers := 3     
+	                3 Bit    Registers := 7     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 15    
 +---Muxes : 
 	   2 Input   23 Bit        Muxes := 1     
 	   2 Input   20 Bit        Muxes := 1     
 	   4 Input    4 Bit        Muxes := 1     
 	   2 Input    4 Bit        Muxes := 1     
 	   2 Input    2 Bit        Muxes := 3     
-	   2 Input    1 Bit        Muxes := 6     
+	   2 Input    1 Bit        Muxes := 18    
 	   4 Input    1 Bit        Muxes := 1     
 	   3 Input    1 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
@@ -279,11 +282,6 @@ WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 WARNING: [Synth 8-7129] Port LED_R_PWM in module top is either unconnected or has no load
 WARNING: [Synth 8-7129] Port LED_G_PWM in module top is either unconnected or has no load
 WARNING: [Synth 8-7129] Port LED_B_PWM in module top is either unconnected or has no load
-WARNING: [Synth 8-7129] Port BTN_UP in module top is either unconnected or has no load
-WARNING: [Synth 8-7129] Port BTN_DOWN in module top is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SW_R in module top is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SW_G in module top is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SW_B in module top is either unconnected or has no load
 WARNING: [Synth 8-3332] Sequential element (Inst_RGB/Inst_Master/FSM_onehot_current_state_reg[3]) is unused and will be removed from module top.
 WARNING: [Synth 8-3332] Sequential element (Inst_RGB/Inst_Master/FSM_onehot_current_state_reg[2]) is unused and will be removed from module top.
 WARNING: [Synth 8-3332] Sequential element (Inst_RGB/Inst_Master/FSM_onehot_current_state_reg[1]) is unused and will be removed from module top.
@@ -292,25 +290,25 @@ WARNING: [Synth 8-3332] Sequential element (Inst_RGB/Inst_FSM_Slave/FSM_onehot_c
 WARNING: [Synth 8-3332] Sequential element (Inst_RGB/Inst_FSM_Slave/FSM_onehot_current_state_reg[1]) is unused and will be removed from module top.
 WARNING: [Synth 8-3332] Sequential element (Inst_RGB/Inst_FSM_Slave/FSM_onehot_current_state_reg[0]) is unused and will be removed from module top.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1375.812 ; gain = 673.152
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1372.973 ; gain = 666.926
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1499.465 ; gain = 796.805
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1501.160 ; gain = 795.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1499.465 ; gain = 796.805
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1501.160 ; gain = 795.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1508.996 ; gain = 806.336
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1510.988 ; gain = 804.941
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -328,37 +326,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1744.184 ; gain = 1041.523
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1746.328 ; gain = 1040.281
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1744.184 ; gain = 1041.523
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1746.328 ; gain = 1040.281
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1744.184 ; gain = 1041.523
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1746.328 ; gain = 1040.281
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1744.184 ; gain = 1041.523
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1746.328 ; gain = 1040.281
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1744.184 ; gain = 1041.523
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1746.328 ; gain = 1040.281
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1744.184 ; gain = 1041.523
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1746.328 ; gain = 1040.281
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -377,26 +375,26 @@ Report Cell Usage:
 |1     |OBUFT |     3|
 +------+------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1744.184 ; gain = 1041.523
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1746.328 ; gain = 1040.281
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 1 critical warnings and 16 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1744.184 ; gain = 969.652
-Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1744.184 ; gain = 1041.523
+Synthesis finished with 0 errors, 0 critical warnings and 11 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1746.328 ; gain = 975.848
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1746.328 ; gain = 1040.281
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1753.355 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1755.523 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1757.012 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1759.164 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 Synth Design complete | Checksum: c13aaa43
 INFO: [Common 17-83] Releasing license: Synthesis
-32 Infos, 68 Warnings, 33 Critical Warnings and 0 Errors encountered.
+56 Infos, 51 Warnings, 32 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:34 . Memory (MB): peak = 1757.012 ; gain = 1254.371
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:34 . Memory (MB): peak = 1759.164 ; gain = 1257.375
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1757.012 ; gain = 0.000
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1759.164 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.runs/synth_1/top.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Dec 28 20:00:03 2025...
+INFO: [Common 17-206] Exiting Vivado at Fri Jan  2 20:05:11 2026...

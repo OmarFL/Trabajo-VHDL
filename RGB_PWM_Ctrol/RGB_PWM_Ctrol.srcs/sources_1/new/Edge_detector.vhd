@@ -1,16 +1,16 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-entity EDGEDTCTR is -- Puedes cambiar el nombre a "Edge_Detector"
+entity EDGEDTCTR is
     port (
-        CLK : in std_logic;
-        SYNC_IN : in std_logic;
-        EDGE : out std_logic
+        CLK     : in  std_logic;
+        SYNC_IN : in  std_logic;
+        EDGE    : out std_logic
     );
 end EDGEDTCTR;
 
-architecture BEHAVIORAL of EDGEDTCTR is
-    signal sreg: std_logic_vector(2 downto 0);
+architecture Behavioral of EDGEDTCTR is
+    signal sreg : std_logic_vector(2 downto 0) := "000";
 begin
     process (CLK)
     begin
@@ -19,7 +19,7 @@ begin
         end if;
     end process;
 
-    with sreg select
-        EDGE <= '1' when "011", 
-                '0' when others;
-end BEHAVIORAL;
+    -- Flanco de subida (0 → 1)
+    EDGE <= '1' when sreg = "001" else '0';
+
+end Behavioral;

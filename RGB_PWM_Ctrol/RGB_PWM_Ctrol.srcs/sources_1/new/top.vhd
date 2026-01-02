@@ -84,6 +84,28 @@ architecture Behavioral of top is
           BLUE_VAL       : out STD_LOGIC_VECTOR (7 downto 0)
     );
     end component;
+    component Input_Conditioner is
+    port( 
+        CLK          : in  std_logic;
+        RESET        : in  std_logic;
+
+        -- Entradas físicas
+        BTN_UP_IN    : in  std_logic;
+        BTN_DOWN_IN  : in  std_logic;
+        SW_R         : in  std_logic;
+        SW_G         : in  std_logic;
+        SW_B         : in  std_logic;
+
+        -- Salidas limpias
+        BTN_UP_OK      : out std_logic;
+        BTN_DOWN_OK    : out std_logic;
+        BTN_UP_CLEAN   : out std_logic; --salida del debouncer
+        BTN_DOWN_CLEAN : out std_logic; --salida del debouncer
+        R_CLEAN        : out std_logic;
+        G_CLEAN        : out std_logic;
+        B_CLEAN        : out std_logic
+    );
+    end component;
 begin
 
     Inst_RGB: RGB_Controller
@@ -104,4 +126,22 @@ begin
             GREEN_VAL      => GREEN_VAL,
             BLUE_VAL       => BLUE_VAL
             );
+    Inst_input: Input_Conditioner
+    port map(
+        CLK            =>  CLK,
+        RESET          =>  RESET,
+        BTN_UP_IN      =>  BTN_UP,
+        BTN_DOWN_IN    =>  BTN_DOWN,
+        SW_R           =>  SW_R,
+        SW_G           =>  SW_G,
+        SW_B           =>  SW_B,
+        BTN_UP_OK      =>  PULSE_UP, 
+        BTN_DOWN_OK    =>  PULSE_DOWN,
+        BTN_UP_CLEAN   =>  UP_CLEAN,
+        BTN_DOWN_CLEAN =>  DOWN_CLEAN,
+        R_CLEAN        =>  R_CLEAN,
+        G_CLEAN        =>  G_CLEAN,
+        B_CLEAN        =>  B_CLEAN
+        );
+            
 end Behavioral;
