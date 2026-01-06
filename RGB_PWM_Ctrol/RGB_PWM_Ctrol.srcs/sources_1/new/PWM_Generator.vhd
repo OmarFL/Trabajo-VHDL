@@ -20,53 +20,35 @@ ENTITY PWM_Generator IS
     );
 END PWM_Generator;
 
-ARCHITECTURE Behavioral OF PWM_Generator IS
+architecture Behavioral of PWM_Generator is
 
-    --Contador que va de 0 a 255 continuamente
-    SIGNAL counter : unsigned(7 downto 0) := (others => '0');
+    -- Único contadro (de 0 a 255) para los 3 colores
+    signal pwm_counter : unsigned(7 downto 0) := (others => '0');
 
-BEGIN
+begin
 
-    PROCESS(CLK)
-    BEGIN
-        IF rising_edge(CLK) THEN
-            
-            -- RESET SÍNCRONO
-            IF RESET = '1' THEN
-                counter <= (others => '0');
-                LED_R   <= '0';
-                LED_G   <= '0';
-                LED_B   <= '0';
-            ELSE
-                -- EL CONTADOR (El corazón del PWM)
-                -- Suma 1 en cada ciclo. Al llegar a 255 (11111111), 
-                -- en el siguiente paso vuelve a 0 automáticamente.
-                counter <= counter + 1;
+    process(CLK, RESET)
+    begin
+        if RESET = '1' then
+            pwm_counter <= (others => '0');
+        elsif rising_edge(CLK) then
+            -- Al ser unsigned de 8 bits, cuando llega a 255 y suma 1,
+            -- vuelve a 0 automáticamente (overflow). Es lo que queremos.
+            pwm_counter <= pwm_counter + 1;
+        end if;
+    end process;
 
-                -- COMPARADOR ROJO
-                -- Si el valor deseado es mayor que el contador actual -> ENCIENDE
-                if counter < unsigned(RED_VAL) then
-                    LED_R <= '1';
-                else
-                    LED_R <= '0';
-                end if;
+    -- GENERACIÓN DE LA ONDA
+    -- Si el valor deseado es mayor que el contador -> LED ON
+    -- Si el valor deseado es menor -> LED OFF
+    
+    -- Para el Rojo
+    LED_R <= '1' when (unsigned(RED_VAL) > pwm_counter) else '0';
+    
+    -- Para el Verde
+    LED_G <= '1' when (unsigned(GREEN_VAL) > pwm_counter) else '0';
+    
+    -- Para el Azul
+    LED_B <= '1' when (unsigned(BLUE_VAL) > pwm_counter) else '0';
 
-                -- COMPARADOR VERDE
-                if counter < unsigned(GREEN_VAL) then
-                    LED_G <= '1';
-                else
-                    LED_G <= '0';
-                end if;
-
-                -- COMPARADOR AZUL
-                if counter < unsigned(BLUE_VAL) then
-                    LED_B <= '1';
-                else
-                    LED_B <= '0';
-                end if;
-                
-            end if;
-        END IF;
-    END PROCESS;
-
-END Behavioral;
+end Behavioral;
