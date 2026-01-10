@@ -106,6 +106,24 @@ architecture Behavioral of top is
         B_CLEAN        : out std_logic
     );
     end component;
+    
+    component PWM_Generator IS
+    PORT (
+        CLK       : IN  std_logic;
+        RESET     : IN  std_logic;
+        
+        --ENTRADAS DE VALOR
+        --Son vectores de 8 bits (0 a 255)
+        RED_VAL   : IN  std_logic_vector(7 downto 0);
+        GREEN_VAL : IN  std_logic_vector(7 downto 0);
+        BLUE_VAL  : IN  std_logic_vector(7 downto 0);
+        
+        --SALIDAS FÍSICAS
+        LED_R     : OUT std_logic;
+        LED_G     : OUT std_logic;
+        LED_B     : OUT std_logic
+    );
+    end component;
 begin
 
     Inst_RGB: RGB_Controller
@@ -142,6 +160,18 @@ begin
         R_CLEAN        =>  R_CLEAN,
         G_CLEAN        =>  G_CLEAN,
         B_CLEAN        =>  B_CLEAN
+        );
+    
+    Inst_PWM: PWM_Generator
+    port map(
+        CLK       => CLK,
+        RESET     => RESET,
+        RED_VAL   => RED_VAL,
+        GREEN_VAL => GREEN_VAL,
+        BLUE_VAL  => BLUE_VAL,
+        LED_R     => LED_R_PWM,
+        LED_G     => LED_G_PWM,
+        LED_B     => LED_B_PWM
         );
             
 end Behavioral;

@@ -3,11 +3,13 @@
 May 22 2025
 00:13:55
 E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sim_1/new/Input_Conditioner_tb.vhd,1767366916,vhdl,,,,input_conditioner_tb,,,,,,,,
+E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sim_1/new/PWM_Generator_tb.vhd,1768048704,vhdl,,,,pwm_generator_tb,,,,,,,,
 E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sim_1/new/RGB_Controller_tb.vhd,1766946418,vhdl,,,,rgb_controller_tb,,,,,,,,
 E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/Debouncer.vhd,1767366882,vhdl,,,,debouncer,,,,,,,,
 E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/Edge_detector.vhd,1767366882,vhdl,,,,edgedtctr,,,,,,,,
 E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/FSM_Master.vhd,1766946216,vhdl,,,,fsm_master,,,,,,,,
 E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/FSM_Slave.vhd,1766946248,vhdl,,,,fsm_slave,,,,,,,,
 E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/Input_Conditioner.vhd,1767366468,vhdl,E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sim_1/new/Input_Conditioner_tb.vhd,,,input_conditioner,,,,,,,,
+E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/PWM_Generator.vhd,1768047952,vhdl,E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sim_1/new/PWM_Generator_tb.vhd,,,pwm_generator,,,,,,,,
 E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/RGB_Controller.vhd,1766943910,vhdl,E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sim_1/new/RGB_Controller_tb.vhd,,,rgb_controller,,,,,,,,
 E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.srcs/sources_1/new/Synchronizer.vhd,1767366882,vhdl,,,,synchrnzr,,,,,,,,
