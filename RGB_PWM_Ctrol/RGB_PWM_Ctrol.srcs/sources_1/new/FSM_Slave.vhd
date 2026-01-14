@@ -67,7 +67,7 @@ architecture Behavioral of FSM_Slave is
 begin
 
     -- Selección del límite según la entrada del FSM_Master (opcional)
-    limit_val <= CYCLES_FAST when (DELAY_SELECT = '1') else CYCLES_TEST; --Ojo, he cambiado el lento por el test
+    limit_val <= CYCLES_FAST when (DELAY_SELECT = '1') else CYCLES_SLOW; --Ojo, he cambiado el lento por el test
 
 
     ----------------------------------------------------------------------------------
