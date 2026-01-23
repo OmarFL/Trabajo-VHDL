@@ -3,8 +3,8 @@
 # SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
 # IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
 # SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
-# Start of session at: Sat Jan 10 14:13:08 2026
-# Process ID         : 35944
+# Start of session at: Fri Jan 23 12:22:12 2026
+# Process ID         : 35916
 # Current directory  : E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.runs/synth_1
 # Command line       : vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
 # Log file           : E:/uni/SED/Trabajo-VHDL/RGB_PWM_Ctrol/RGB_PWM_Ctrol.runs/synth_1/top.vds
@@ -17,8 +17,8 @@
 # CPU Physical cores : 8
 # CPU Logical cores  : 16
 # Host memory        : 16948 MB
-# Swap memory        : 11274 MB
-# Total Virtual      : 28222 MB
-# Available Virtual  : 10450 MB
+# Swap memory        : 13421 MB
+# Total Virtual      : 30370 MB
+# Available Virtual  : 16353 MB
 #-----------------------------------------------------------
 source top.tcl -notrace

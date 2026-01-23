@@ -19,6 +19,8 @@ architecture Behavioral of Input_Conditioner_tb is
 
     signal BTN_UP_OK   : std_logic;
     signal BTN_DOWN_OK : std_logic;
+    signal BTN_UP_CLEAN: std_logic;
+    signal BTN_DOWN_CLEAN : std_logic;
     signal R_CLEAN     : std_logic;
     signal G_CLEAN     : std_logic;
     signal B_CLEAN     : std_logic;
@@ -36,6 +38,8 @@ begin
             SW_B        => SW_B,
             BTN_UP_OK   => BTN_UP_OK,
             BTN_DOWN_OK => BTN_DOWN_OK,
+            BTN_UP_CLEAN => BTN_UP_CLEAN,
+            BTN_DOWN_CLEAN => BTN_DOWN_CLEAN,
             R_CLEAN     => R_CLEAN,
             G_CLEAN     => G_CLEAN,
             B_CLEAN     => B_CLEAN
